@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace razorRubaiWeb.Pages
+namespace RubaiWeb.Pages.Shared
 {
     public class RandomModel : PageModel
     {

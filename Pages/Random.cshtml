@@ -1,26 +1,4 @@
-﻿@*https://stackoverflow.com/questions/61846815/how-to-add-a-event-to-a-button-using-razor
-*@
-@page
-@model razorRubaiWeb.Pages.RandomModel
+﻿@page
+@model RubaiWeb.Pages.Shared.RandomModel
 @{
-    ViewData["Title"] = "Random";
 }
-
-@{
-    string GetHello()
-    {
-        return "Hello";
-    }
-}
-
-<button onclick="RazorFunction()">Click Me</button>
-
-<script>
-    function RazorFunction() {
-        $("button").html('@GetHello()');
-    }
-</script>
-
-
-
-
