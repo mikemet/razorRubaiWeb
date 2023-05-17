@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual Studio 2022\\Projects\\razorRubaiWeb\\RubaiWeb.csproj",
+      "projectUniqueName": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\RubaiWeb.csproj",
       "projectName": "RubaiWeb",
-      "projectPath": "D:\\Visual Studio 2022\\Projects\\razorRubaiWeb\\RubaiWeb.csproj",
+      "projectPath": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\RubaiWeb.csproj",
       "packagesPath": "C:\\Users\\mikem\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual Studio 2022\\Projects\\razorRubaiWeb\\obj\\",
+      "outputPath": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mikem\\AppData\\Roaming\\NuGet\\NuGet.Config",
