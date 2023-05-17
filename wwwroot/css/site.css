@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'), url('../fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'), url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'monotypecorsiva';
+    src: url('../fonts/monotypecorsiva-webfont.woff2') format('woff2'), url('../fonts/monotypecorsiva-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*============================================================*/
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+/*============================================================*/
+html {
+    font-size: 16px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+/*============================================================*/
+:root {
+    --base-scale: calc(100vw / 75);
+    --h1-font-size: max(1rem, min(4rem, calc(var(--base-scale) * 4)));
+    --h2-font-size: max(1rem, min(3.5rem, calc(var(--base-scale) * 3.5)));
+    --h3-font-size: max(1rem, min(3rem, calc(var(--base-scale) * 3)));
+    --color-burgundy: #990066;
+    --box-shadow: 7px 7px 5px rgba(0,0,0,0.6); /* Тень */
+}
+/*=======================================================*/
+body {
+    font-family: 'robotoregular', sans-serif, Arial;
+    min-width: 320px;
+    margin-bottom: 4rem;
+}
+
+.main {
+
+}
+
+.khayamImg>img {
+    box-shadow: var(--box-shadow);
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote > h4 {
+    font-family: 'monotypecorsiva', sans-serif, Arial;
+    color: var(--color-burgundy);
+}
+
+.quote>a{
+    /*align-self:self-end;*/
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-select {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+    .btn-select:hover {
+        box-shadow: var(--box-shadow);
+        outline: 2px solid var(--color-burgundy);
+    }
+
+#rubaiField {
+    outline: 2px solid brown;
+    background-color: lightgray;
+    background-image: url('/images/papyrus4.jpg');
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    /*object-fit: none;*/
+}
+
+    .rubai > h3 {
+        font-family: 'monotypecorsiva', sans-serif, Arial;
+        line-height: 1.4;
+        color: var(--color-burgundy);
+    }
+
