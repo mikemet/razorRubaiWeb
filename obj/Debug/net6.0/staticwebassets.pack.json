@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\RubaiWeb.bundle.scp.css"
     },
     {
-      "Id": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\wwwroot\\Data\\testRubai.csv",
-      "PackagePath": "staticwebassets\\Data\\testRubai.csv"
-    },
-    {
       "Id": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

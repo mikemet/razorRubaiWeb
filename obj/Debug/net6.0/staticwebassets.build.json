@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hbsvVfUw2gO4Z/YC2gpkcGMAo/pnzDfYJ9BCNWdf1f4=",
+  "Hash": "1L2SBz9ULSiL0MspzrPpLReHTMmSODdjtLyNfkPYZUA=",
   "Source": "RubaiWeb",
   "BasePath": "_content/RubaiWeb",
   "Mode": "Default",
@@ -66,23 +66,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\wwwroot\\Data\\testRubai.csv",
-      "SourceId": "RubaiWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\wwwroot\\",
-      "BasePath": "_content/RubaiWeb",
-      "RelativePath": "Data/testRubai.csv",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Data\\testRubai.csv"
     },
     {
       "Identity": "D:\\mGitFlic\\Rubai\\razorRubaiWeb\\wwwroot\\favicon.ico",

@@ -1,18 +1,54 @@
-﻿<h3>Rubai</h3>
+﻿<h4>Rubai</h4>
 
-<h4>Вывод из файла:</h4>
+@*<h5>Вывод из файла:</h5>
 
-<p>Work in field</p>
-<p>
-    @str;
-</p>
+@{
+    foreach (var item in lines)
+    {
+        <p>@item.ToString()</p>
+    }
+}*@
 
-<button class="btn btn-primary" @onclick="Refresh">Refresh field</button>
+<h5>Выбор случайного: </h5>
+
+@{
+    
+}
+
+<button class="btn btn-primary" @onclick="RubaiRandom">Selection Random</button>
 
 @code {
-    string str = "This is text.";
-    private void Refresh()
+    //string str = "This is text.";
+    //private void Refresh()
+    //{
+    //    str = "This is NEW text!";
+    //}
+
+    private void RubaiRandom()
     {
-        str = "This is NEW text!";
+        string[] lines = File.ReadAllLines("testRubai.csv");
+
+        void Rubai()
+        {
+            Random rnd = new Random();
+            int mIndex = rnd.Next(lines.Length);
+
+            if (mIndex >= (lines.Length - 3))
+            {
+                mIndex = lines.Length - 4;
+            }
+
+            List<string> rubai = new List<string>();
+
+            while (mIndex % 4 != 0)
+            {
+                mIndex++;
+                rubai.Add(mIndex.ToString());
+            }
+
+     
+        }
+
+           
     }
 }
