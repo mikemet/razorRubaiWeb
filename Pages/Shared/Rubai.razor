@@ -1,54 +1,51 @@
 ﻿<h4>Rubai</h4>
 
-@*<h5>Вывод из файла:</h5>
-
-@{
-    foreach (var item in lines)
-    {
-        <p>@item.ToString()</p>
-    }
-}*@
-
 <h5>Выбор случайного: </h5>
+<p>
+    @foreach (var item in lst)
+    {
+        @item.ToString()
 
-@{
-    
-}
+        <br />
+    }
+</p>
 
 <button class="btn btn-primary" @onclick="RubaiRandom">Selection Random</button>
 
 @code {
-    //string str = "This is text.";
-    //private void Refresh()
-    //{
-    //    str = "This is NEW text!";
-    //}
+    string[] lines = File.ReadAllLines("testRubai.csv");
+    List<string> lst = new List<string>(){"Если я согрешил - то не сам по себе,",
+                                            "Путь земной совершил я не сам по себе,",
+                                            "Где я был? Кто я был? Жил впотьмах, исполняя",
+                                            "Все, что Он предрешил, а не сам по себе."};
+    string? str;
 
     private void RubaiRandom()
     {
-        string[] lines = File.ReadAllLines("testRubai.csv");
+        str = "";
+        lst.Clear();
 
-        void Rubai()
+        Random rnd = new Random();
+        int mIndex = rnd.Next(lines.Length);
+
+        if (mIndex >= lines.Length - 3)
         {
-            Random rnd = new Random();
-            int mIndex = rnd.Next(lines.Length);
-
-            if (mIndex >= (lines.Length - 3))
-            {
-                mIndex = lines.Length - 4;
-            }
-
-            List<string> rubai = new List<string>();
-
-            while (mIndex % 4 != 0)
-            {
-                mIndex++;
-                rubai.Add(mIndex.ToString());
-            }
-
-     
+            mIndex = lines.Length - 4;
         }
 
-           
+        while (mIndex % 4 != 0)
+        {
+            mIndex++;
+        }
+
+        str = lines[mIndex];
+        lst.Add(str);
+
+        for (int i = 0; i < 3; i++)
+        {
+            mIndex++;
+            str = lines[mIndex];
+            lst.Add(str);
+        }
     }
 }
